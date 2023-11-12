@@ -1,0 +1,19 @@
+{
+  "name": "dbconnectivity",
+  "version": "1.0.0",
+  "description": "This showcases db connectivity using Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -e '*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anmol Dash",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "usa-state-validator": "^1.0.6"
+  }
+}

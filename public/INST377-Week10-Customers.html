@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Customer Data</title>
+        <script type="text/javascript" src="INST377-Week10-Customers.js" defer></script>
+        <style>
+            table, th, td  {
+                border: 1px solid black;
+                padding: 5px;
+                margin-top: 10px;
+                background-color: white;
+            }
+            #errorBox {
+                background-color: rgb(209, 81, 81);
+                color: white;
+                border: 3px solid black;
+                margin: 10px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Customer Data!</h1>
+        <form onsubmit="createCustomer(); return false;">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName">
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" >
+            <br>
+            <label for="state">State:</label>
+            <input type="text" id="state" maxlength="2">
+            <br>
+            <br>
+            <input type="submit" name="Submit">
+            <hr>
+        </form>
+
+        <div id="cutoff"></div>
+    </body>
+</html>

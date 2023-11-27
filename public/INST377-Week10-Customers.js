@@ -1,6 +1,7 @@
 async function loadCustomerData() {
     var host = window.location.origin;
-    var test = await fetch('${host}/customers')
+    console.log("|" +host + "|");
+    var test = await fetch(`${host}/customers`)
         .then((res) => res.json())
         .then((res) => {
             console.log(res)
@@ -51,7 +52,7 @@ async function loadCustomerData() {
 async function createCustomer() {
     console.log('Creating Customer')
     var host = window.location.origin;
-    var test = await fetch('${host}/customer', {
+    var test = await fetch(`${host}/customer`, {
         method: 'POST',
         body: JSON.stringify({
             "firstName": `${document.getElementById("firstName").value}`,

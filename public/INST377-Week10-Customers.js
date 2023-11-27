@@ -1,5 +1,6 @@
 async function loadCustomerData() {
-    var test = await fetch('http://localhost:3000/customers')
+    var host = Window.location.origin;
+    var test = await fetch('${host}/customers')
         .then((res) => res.json())
         .then((res) => {
             console.log(res)

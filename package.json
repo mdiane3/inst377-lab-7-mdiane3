@@ -7,7 +7,7 @@
     "start": "nodemon -e '*'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Anmol Dash",
+  "author": "Madina Diane",
   "license": "ISC",
   "dependencies": {
     "@supabase/supabase-js": "^2.38.4",
